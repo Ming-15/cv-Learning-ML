@@ -1,0 +1,22 @@
+class a():
+    def __init__(self):
+        pass
+    def __method__ (self):
+        print('a\'smethod')
+    def __way(self):
+        print('away')
+class b(a):
+    # pass
+    def __method__ (self):
+        print('b\'s method')
+    def __way(self):
+        print('bway')
+c = b()
+
+c.__method__()
+c._a__way()
+print(dir(b()))
+'''b's method
+away
+'__method__','_a__way', '_b__way'
+'''
